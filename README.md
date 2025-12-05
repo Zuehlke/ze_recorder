@@ -1,106 +1,161 @@
-ZE Recorder
+# ZE Recorder
 
-# Version
+---
 
-Diese Beschreibung gilt für die Version 5.0 des ZE Recorders.
+## Table of Contents
 
-# Einleitung
+- [Version](#version)
+- [Introduction](#introduction)
+- [GUI](#gui)
+  - [Top Toolbar Buttons](#top-toolbar-buttons)
+- [Specifications](#specifications)
+- [Installation](#installation)
+- [User Manual](#user-manual)
+  - [Project Info](#project-info)
+  - [Channel Settings](#channel-settings)
+  - [Result File Settings](#result-file-settings)
+- [Flex Logger](#flex-logger)
 
-Der ZE Recorder bietet eine einfache Möglichkeit, Messdaten mit NI-DAQ-Hardware zu erfassen und in eine CSV- oder TDMS-Datei zu schreiben. 
-Der Installer installiert nicht die benötigte LabVIEW Run-Time Engine und auch nicht die NI-DAQmx-Treiber. 
-Diese müssen vom Benutzer manuell installiert werden, bevor die Software verwendet werden kann. 
-Für die rasche Datenerfassung wird ein USB-DAQ-Gerät empfohlen.
+---
 
-## **GUI**
+## Version
 
-Die GUI des ZE Recorders besteht aus einem Hauptfenster, dessen Grösse ab einer vorgegebenen Minimalgrösse frei angepasst werden kann.
+This description applies to **version 5.0** of the ZE Recorder.
 
-Im oberen Bereich befinden sich mehrere Schaltflächen:
+## Introduction
 
-Eine Schaltfläche zum Öffnen der PDF-Bedienungsanleitung.
-Eine Schaltfläche zum Öffnen des TDMS Viewers.
-Eine Schaltfläche zum Ein- und Ausblenden des Konfigurationsbereichs.
-Eine Schaltfläche zum Starten der Messung.
-Eine Anzeige, die während einer laufenden Messung blinkt.
-Eine Schaltfläche zum Stoppen der laufenden Messung.
+The ZE Recorder provides an easy way to acquire measurement data using **NI‑DAQ hardware** and save it to CSV or TDMS files.
 
-Wird der Konfigurationsbereich eingeblendet, erscheint unterhalb der Hauptansicht ein zusätzlicher Bereich, in dem die verfügbaren Einstellungen und Parameter für die Messung angepasst werden können.
+> ⚠️ The installer does **not** include the LabVIEW Run‑Time Engine or the NI‑DAQmx drivers.  
+> These must be installed manually by the user before the software can be fully used.  
+> **Required versions:** LabVIEW Runtime **2025 Q3 (32‑bit)**, NI‑DAQmx **2025 Q4**.
 
-## **Spezifikation:**
+For fast data acquisition, a **USB‑DAQ device** is recommended.
 
-Die Messspezifikation hängen primär von der für die Messung verwendeten Hardware ab.
+---
 
-|     |     |     |     |
+## GUI
+
+The ZE Recorder GUI consists of a **main window** with a resizable layout, starting from a predefined minimum size.
+
+### Top Toolbar Buttons:
+
+- <img src="docs/openPDFManual.png" width="24" /> **Open PDF manual** – Opens the user manual.  
+- <img src="docs/openTDMSViewer.png" width="24" /> **Open TDMS Viewer** – Opens the TDMS Viewer.  
+- <img src="docs/toggleConfigurationPanel.png" width="24" /> **Toggle configuration panel** – Show/hide the configuration area.  
+- <img src="docs/startMeasurement.png" width="24" /> **Start measurement** – Starts the data acquisition.  
+- <img src="docs/measurementIndicator.png" width="24" /> **Measurement indicator** – Blinks during a running measurement.  
+- <img src="docs/stopMeasurement.png" width="24" /> **Stop measurement** – Stops the ongoing measurement.
+
+When the configuration panel is visible, an **additional section** appears below the main view where measurement settings and parameters can be adjusted.
+
+---
+
+## Specifications
+
+Measurement specifications primarily depend on the **hardware used**.
+
+| Parameter | Value | Parameter | Value |
 | --- | --- | --- | --- |
-| **Anzahl Kanäle (max.)** | Abhängig von der angeschlossenen Messhardware | **Sampling Rate (max.)** | Abhängig von der Auflösung der Messhardware. Einstellbar für alle Kanäle gemeinsam.  <br>0.001Hz bis 1E+6Hz |
-| **Anzahl Messgeräte** | Nicht eingeschränkt solange die maximale Sampling Rate eingehalten wird. Kanäle müssen je Gerät geordnet werden. | **Speicherformat** | CSV oder TDMS Datei (wählbar) |
-| **Spannungsbereich** | Abhängig vom Bereich der Messhardware. Üblicherweise +/- 10V | **Verfügbare Messgeräte** | Alle über NI DAQ ansteuerbare Geräte |
-| **Auflösung** | Abhängig von der Auflösung der Messhardware. Einstellbar über «Range» pro Kanal einzeln | **Systemvoraussetzungen** | Windows PC, NI DAQ Hardware |
+| **Max. number of channels** | Depends on the connected hardware | **Max. sampling rate** | Depends on hardware resolution. Configurable for all channels simultaneously. 0.001 Hz to 1,000,000 Hz |
+| **Number of devices** | Unlimited, as long as max. sampling rate is maintained. Channels must be ordered per device. | **Storage format** | CSV or TDMS (selectable) |
+| **Voltage range** | Depends on hardware. Usually ±10 V | **Supported devices** | All NI‑DAQ controllable devices |
+| **Resolution** | Depends on hardware. Configurable per channel via "Range" | **System requirements** | Windows PC, NI‑DAQ hardware, **LabVIEW Runtime 2025 Q3 (32‑bit)**, **NI‑DAQmx 2025 Q4** |
 
-# Installation
+---
 
-Den Installer zum ZE Recorder findet ihr unter:
+## Installation
 
-https://github.com/Zuehlke/ze_recorder
+The ZE Recorder installer can be found here:
 
-Für die Installation bitte die Daten auf das lokale Laufwerk kopieren und die Setup.exe ausführen. 
-Der Installer installiert die benötigten Komponenten des ZE Recorders, jedoch nicht die NI-DAQmx-Treiber und nicht die LabVIEW Run-Time Engine. 
-Diese müssen vom Benutzer manuell installiert werden, bevor die Software vollständig verwendet werden kann.
+[https://github.com/Zuehlke/ze_recorder](https://github.com/Zuehlke/ze_recorder)
 
-Die Installation verwendet folgende Pfade:
+**Installation steps:**
 
-|     |     |
+1. Copy the installer files to a local drive.  
+2. Run `Setup.exe`.
+
+> ⚠️ The installer installs only ZE Recorder components, **not** NI‑DAQmx drivers or LabVIEW Run‑Time Engine.  
+> **Required versions:** LabVIEW Runtime **2025 Q3 (32‑bit)**, NI‑DAQmx **2025 Q4**.  
+> These must be installed manually before the software can be fully used.
+
+**External download links:**
+
+- **LabVIEW Runtime 2025 Q3 (32‑bit)**  
+  [Download LabVIEW 2025 Q3 Runtime](https://www.ni.com/en/support/downloads/software-products/download.labview-runtime.html?srsltid=AfmBOoo_VRTvrEjGC4yUbKw5PD-cgCiZqeOJ4lvX5MQeZtvF8t8xQQv#569299)
+
+- **NI-DAQmx 2025 Q4**  
+  [Download NI-DAQmx](https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html?srsltid=AfmBOopUIAd-oOh0jKBvCTbXY8udMrAmUMAW3XPASRtCGILwLCNhVqzd#577117)
+
+**Default installation paths:**
+
+| Component | Path |
 | --- | --- |
-| Exe: | C:\\Program Files (x86)\\Zuehlke\\ZE_Recorder |
-| Konfigurations- und Resultatdateien: | C:\\Program Data\\Zuehlke\\ZE_Recorder |
-|     |     |
+| Executable | `C:\Program Files (x86)\Zuehlke\ZE_Recorder` |
+| Configuration & result files | `C:\Program Data\Zuehlke\ZE_Recorder` |
 
-# Bedienungsanleitung
+---
 
-Startet die Messung. Die Messung kann nur gestartet werden, wenn mindestens ein Kanal konfiguriert ist und Namenserweiterung sowie Ordner für das Resultatfile nicht leer sind.  
-Die aktuell aufgezeichneten Daten aller Kanäle wer als Graph dargestellt. (Standard sind die letzten 1000 Werte, dies kann aber durch Eingabe von anderen Grenzen an der X-Achse angepasst werden). 
+## User Manual
 
- Öffnet den TDMS-Viewer in einem neuen Fenster.  
-<br/>Damit auf der rechten Seite des Viewers die Parameter, Daten und Grafik angezeigt wird, muss auf der linken Seite die Datengruppe (Measurement Data) oder ein einzelner Datenkanal angewählt werden.  
-<br/>Es werden jeweils nur die ersten 1000 Werte pro Kanal angezeigt. Soll mehr angezeigt werden, kann dies mit dem «Settings…» Button geändert werden.  
+1. **Start Measurement**  
+   - Measurements can only start if at least **one channel** is configured and the **file name** and **folder** are not empty.  
+   - Current data from all channels is displayed as a **graph** (default: last 1000 values). X-axis range can be adjusted.
 
-Die Konfiguration kann nur verändert werden, wenn keine Messung am Laufen ist.  
-<br/>**Project Info:** Die drei Felder «Project ID», «Operator ID» und «Description» haben keinen Einfluss auf die Messung. Sie werden als Metadaten in die Resultatdatei geschrieben.  
-<br/><br/>**Channel Settings:**
+2. **Open TDMS Viewer**  
+   - Opens a new window for viewing data.  
+   - To see **parameters, data, and graph** on the right, select a **data group** (Measurement Data) or an **individual channel** on the left.  
+   - Only the **first 1000 values per channel** are displayed by default. This can be changed via the “Settings…” button.
 
-|     |     |     |
+> ⚠️ Configuration can only be changed if **no measurement is running**.
+
+### Project Info
+
+Fields: `Project ID`, `Operator ID`, `Description`.  
+- No impact on measurement.  
+- Stored as **metadata** in the result file.
+
+### Channel Settings
+
+| Field | Description | Required |
 | --- | --- | --- |
-| **DAQmx Channel** | Dropdown-Liste zur Zuteilung der verfügbaren physikalischen Kanäle (nur analoge Inputs) zu jedem Messkanal. | Pflichtfeld |
-| **Range (+/-)** | Einstellung für den AD-Konverter. Die Range sollte aus Auflösungsgründen dem zu erwartenden Messsignal angepasst werden. Die Range ist immer symmetrisch um 0V. | Pflichtfeld |
-| **Terminal** | Terminalkonfiguration der Messung. Siehe dazu Kapitel 5. | Pflichtfeld |
-| **Unit** | Einheit des Messsignals. Wird in der Kanalbeschreibung gespeichert. | Pflichtfeld |
-| **Temp?** | Markiert Kanäle zur Temperaturmessung (entsprechendes DAQ Modul wird verwendet). Parameter für den Temperaturkanal werden nach dem Start abgefragt | Pflichtfeld |
-| **Description** | Beschreibung des Kanales, wird in die TDMS Datei geschrieben | Optional |
-| **Sampling Rate** | Sampling Rate in Hz. Zulässiger Bereich 0.001Hz bis 1’000’000Hz | Pflichtfeld |
+| **DAQmx Channel** | Dropdown to assign available physical channels (analog input only) | Yes |
+| **Range (+/-)** | Set the ADC range; should match expected signal. Always symmetric around 0V | Yes |
+| **Terminal** | Terminal configuration of the measurement | Yes |
+| **Unit** | Measurement unit, stored in channel description | Yes |
+| **Temp?** | Marks channels for temperature measurement; corresponding DAQ module used | Yes |
+| **Description** | Channel description, written into TDMS file | Optional |
+| **Sampling Rate** | Sampling rate in Hz (0.001 Hz – 1,000,000 Hz) | Yes |
 
-- Es können beliebig viele unabhängige DAQ Geräte verwendet werden, jedoch müssen die Kanäle je Gerät geordnet werden. Die Software prüft dies und wird die Kanäle allenfalls neu anordnen.
-- Ein Kanal kann mit «Temp?» markiert werden, falls an dem Kanal ein Temperatursensor angeschlossen ist. Der Recorder unterstützt momentan Thermocouples und RTD Elemente. Der Recorder berechnet nach Eingabe der Parameter selbstständig die Temperaturwerte. Voraussetzung ist ein DAQ Modul, welches für Temperaturmessungen vorgesehen ist. Für eigene Aufbauten wird die Aufzeichnung der Spannungs-Rohdaten empfohlen.
+- Multiple independent DAQ devices can be used; channels must be **ordered per device**. Software will verify and reorder if needed.  
+- Channels marked with **Temp?** support **thermocouples and RTD sensors**. The recorder automatically calculates temperature after parameters are entered. For custom setups, raw voltage data recording is recommended.
 
-**Result File Settings:**  
-Der Recorder bildet den Dateinamen für die Resultatdateien aus einem Zeitstempel und dem konfigurierbaren Postfix-String, z.B. 2020_08_12-141300_Test.tdms  
-Resultate können entweder als CSV oder TDMS Datei gespeichert werden.  
-Standardmässig werden die Resultatdateien im Ordner C:\\Program Data\\Zuehlke\\ZE Recorder\\Config gespeichert. Im Feld «Folder» kann ein alternativer Speicherort angegeben werden  
+### Result File Settings
 
-Die Software wird mit dem «X» im rechten oberen Fenstereck beendet. Bei Beenden der Software werden die zu diesem Zeitpunkt verwendeten Parameter in der Datei ZE_Recorder_Config.xml im Odner C:\\Program Data\\Zuehlke\\ZE_Recorder\\Config gespeichert und beim nächsten Öffnen des Recorders automatisch wieder übernommen.
+- File names are generated from **timestamp + configurable postfix**, e.g., `2020_08_12-141300_Test.tdms`.  
+- Files can be saved as **CSV or TDMS**.  
+- Default save path: `C:\Program Data\Zuehlke\ZE Recorder\Config`.  
+- Alternate folder can be set in the “Folder” field.
 
-# Flex Logger
+> When closing the software via the `X` button, parameters are saved to:  
+> `ZE_Recorder_Config.xml` in `C:\Program Data\Zuehlke\ZE_Recorder\Config` and reloaded on next start.
 
-Ein Hauptziel beim ZE Recorder ist KISS (Keep it stupid Simple). Für Anwendungen mit etwas höheren Anforderungen bietet sich der Flex Logger von NI an. Für den Nachteil der umfangreicheren Installation und etwas komplizierteren Bedienung erhält man dafür Funktionen wie:
+---
 
-- **Automatischer Dateiensplit**. Bei Langzeitmessungen kann definiert werden, wann auf eine neue Resultatdatei gewechselt werden soll.
-- **Getriggerte Messungen**. Messungen können bei einem konfigurierbaren Ereignis gestartet werden. Die Messzeit vor und nach dem Ereignis kann ebenfalls konfiguriert werden.
-- **Verschiedene Abtastraten**. Verschiedene Messkanäle können mit unterschiedlichen Abtastraten aufgezeichnet werden.
-- **Konfigurierbare Anzeige**. Die Anzeige der Messdaten im FlexLogger kann den eigenen Bedürfnissen angepasst werden.
+## Flex Logger
 
-🢂 Der Flexlogger unterstützt nicht alle NI-Hardware:  
-Unterstützt werden: cDAQ Chassis 91xx mit entsprechenden C-Serie Modulen.  
-Nicht Unterstützt werden z.B. : alte USB-Module der 6xxx Reihe, Virtual Bench, MyDAQ  
-[Hier](https://www.ni.com/documentation/en/flexlogger/1.9/manual/supported-hardware/) findet ihr die aktuelle Liste der unterstützten Module.  
+A key goal of ZE Recorder is **KISS (Keep It Stupid Simple)**.
 
-Mehr Infos zum FlexLogger findet ihr hier:  
-https://www.ni.com/en-us/shop/data-acquisition-and-control/flexlogger.html
+For advanced applications, **NI Flex Logger** can be used, providing:
+
+- **Automatic file splitting** – define when to switch to a new file for long-term measurements.  
+- **Triggered measurements** – start measurement on configurable events; pre/post-event durations configurable.  
+- **Multiple sampling rates** – record channels at different rates.  
+- **Configurable display** – customize data visualization to your needs.
+
+> ⚠️ Not all NI hardware is supported.  
+> Supported: cDAQ chassis 91xx with C-series modules.  
+> Not supported: older USB 6xxx series, Virtual Bench, MyDAQ.  
+> [Supported hardware list](https://www.ni.com/documentation/en/flexlogger/1.9/manual/supported-hardware/)
+
+More info: [NI FlexLogger](https://www.ni.com/en-us/shop/data-acquisition-and-control/flexlogger.html)
