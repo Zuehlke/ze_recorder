@@ -3,6 +3,6 @@ ZE_Recorder 5.0
 
 Der Installer für den ZE_Recorder 5.0 befindet sich unter 
 
-https://github.com/Zuehlke/ze_recorder/tree/firstUpload/builds/Installer/Volume/setup.exe
+https://github.com/Zuehlke/ze_recorder/tree/main/build/Installer/Volume/setup.exe
 
 Für die Installation bitte die Daten auf das lokale Laufwerk kopieren und die Setup.exe ausführen. Der Installer installiert die benötigten Komponenten des ZE Recorders, jedoch nicht die NI-DAQmx-Treiber und nicht die LabVIEW Run-Time Engine. Diese müssen vom Benutzer manuell installiert werden, bevor die Software vollständig verwendet werden kann.
