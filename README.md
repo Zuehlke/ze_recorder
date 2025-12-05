@@ -22,6 +22,8 @@
 
 This description applies to **version 5.0** of the ZE Recorder.
 
+![ZE Recorder App](docs/images/zeRecorder.png)
+
 ## Introduction
 
 The ZE Recorder provides an easy way to acquire measurement data using **NI‑DAQ hardware** and save it to CSV or TDMS files.
@@ -116,6 +118,8 @@ Fields: `Project ID`, `Operator ID`, `Description`.
 - Stored as **metadata** in the result file.
 
 ### Channel Settings
+
+![ZE Recorder App Configuration](docs/images/zeRecorderConfig.png)
 
 | Field | Description | Required |
 | --- | --- | --- |
