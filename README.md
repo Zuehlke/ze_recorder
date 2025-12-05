@@ -40,12 +40,12 @@ The ZE Recorder GUI consists of a **main window** with a resizable layout, start
 
 ### Top Toolbar Buttons:
 
-- <img src="docs/openPDFManual.png" width="24" /> **Open PDF manual** – Opens the user manual.  
-- <img src="docs/openTDMSViewer.png" width="24" /> **Open TDMS Viewer** – Opens the TDMS Viewer.  
-- <img src="docs/toggleConfigurationPanel.png" width="24" /> **Toggle configuration panel** – Show/hide the configuration area.  
-- <img src="docs/startMeasurement.png" width="24" /> **Start measurement** – Starts the data acquisition.  
-- <img src="docs/measurementIndicator.png" width="24" /> **Measurement indicator** – Blinks during a running measurement.  
-- <img src="docs/stopMeasurement.png" width="24" /> **Stop measurement** – Stops the ongoing measurement.
+- <img src="docs/icons/openPDFManual.png" width="24" /> **Open PDF manual** – Opens the user manual.  
+- <img src="docs/icons/openTDMSViewer.png" width="24" /> **Open TDMS Viewer** – Opens the TDMS Viewer.  
+- <img src="docs/icons/toggleConfigurationPanel.png" width="24" /> **Toggle configuration panel** – Show/hide the configuration area.  
+- <img src="docs/icons/startMeasurement.png" width="24" /> **Start measurement** – Starts the data acquisition.  
+- <img src="docs/icons/measurementIndicator.png" width="24" /> **Measurement indicator** – Blinks during a running measurement.  
+- <img src="docs/icons/stopMeasurement.png" width="24" /> **Stop measurement** – Stops the ongoing measurement.
 
 When the configuration panel is visible, an **additional section** appears below the main view where measurement settings and parameters can be adjusted.
 
