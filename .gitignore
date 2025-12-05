@@ -1,0 +1,15 @@
+# Generic
+*.tmp
+*.log
+*.bak
+.DS_Store
+
+# LabVIEW
+*.aliases
+*.lvlps
+*.lvbitx
+
+# Build outputs
+build/
+*.msi
+*.zip
