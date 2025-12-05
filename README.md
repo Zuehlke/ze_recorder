@@ -30,7 +30,7 @@ The ZE Recorder provides an easy way to acquire measurement data using **NI‑DA
 
 > ⚠️ The installer does **not** include the LabVIEW Run‑Time Engine or the NI‑DAQmx drivers.  
 > These must be installed manually by the user before the software can be fully used.  
-> **Required versions:** LabVIEW Runtime **2025 Q3 (32‑bit)**, NI‑DAQmx **2025 Q4**.
+> **Required versions:** Microsoft Windows **11**, LabVIEW Runtime **2025 Q3 (32‑bit)**, NI‑DAQmx **2025 Q4**.
 
 For fast data acquisition, a **USB‑DAQ device** is recommended.
 
@@ -62,7 +62,7 @@ Measurement specifications primarily depend on the **hardware used**.
 | **Max. number of channels** | Depends on the connected hardware | **Max. sampling rate** | Depends on hardware resolution. Configurable for all channels simultaneously. 0.001 Hz to 1,000,000 Hz |
 | **Number of devices** | Unlimited, as long as max. sampling rate is maintained. Channels must be ordered per device. | **Storage format** | CSV or TDMS (selectable) |
 | **Voltage range** | Depends on hardware. Usually ±10 V | **Supported devices** | All NI‑DAQ controllable devices |
-| **Resolution** | Depends on hardware. Configurable per channel via "Range" | **System requirements** | Windows PC, NI‑DAQ hardware, **LabVIEW Runtime 2025 Q3 (32‑bit)**, **NI‑DAQmx 2025 Q4** |
+| **Resolution** | Depends on hardware. Configurable per channel via "Range" | **System requirements** | Microsoft Windows **11** PC, NI‑DAQ hardware, **LabVIEW Runtime 2025 Q3 (32‑bit)**, **NI‑DAQmx 2025 Q4** |
 
 ---
 
@@ -78,7 +78,7 @@ The ZE Recorder installer can be found here:
 2. Run `Setup.exe`.
 
 > ⚠️ The installer installs only ZE Recorder components, **not** NI‑DAQmx drivers or LabVIEW Run‑Time Engine.  
-> **Required versions:** LabVIEW Runtime **2025 Q3 (32‑bit)**, NI‑DAQmx **2025 Q4**.  
+> **Required versions:** Microsoft Windows **11**, LabVIEW Runtime **2025 Q3 (32‑bit)**, NI‑DAQmx **2025 Q4**.  
 > These must be installed manually before the software can be fully used.
 
 **External download links:**
