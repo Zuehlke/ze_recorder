@@ -10,5 +10,4 @@
 *.lvbitx
 
 # Build outputs
-*.msi
 *.zip
