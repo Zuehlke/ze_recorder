@@ -107,7 +107,7 @@ The ZE Recorder installer can be found here:
 2. **Open TDMS Viewer**  
    - Opens a new window for viewing data.  
    - To see **parameters, data, and graph** on the right, select a **data group** (Measurement Data) or an **individual channel** on the left.  
-   - Only the **first 1000 values per channel** are displayed by default. This can be changed via the “Settings…” button.
+   - Only a **portion of values per channel** are displayed by default. This can be changed via the “Start index”, “Samples” and “All” controls.
 
 > ⚠️ Configuration can only be changed if **no measurement is running**.
 
