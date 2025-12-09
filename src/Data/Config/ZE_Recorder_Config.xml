@@ -1,0 +1,97 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>25.3.2f2</Version>
+<Cluster>
+<Name>XML cluster in</Name>
+<NumElts>1</NumElts>
+<Cluster>
+<Name>SettingsCluster</Name>
+<NumElts>4</NumElts>
+<Cluster>
+<Name>Header Cluster</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Project</Name>
+<Val>myProject</Val>
+</String>
+<String>
+<Name>Operator ID</Name>
+<Val>user</Val>
+</String>
+<String>
+<Name>Description</Name>
+<Val>(replace) Measurement Description (replace):</Val>
+</String>
+</Cluster>
+<DBL>
+<Name>Sampling Rate [Hz]</Name>
+<Val>100.00000000000000</Val>
+</DBL>
+<Array>
+<Name>Channel Array</Name>
+<Dimsize>0</Dimsize>
+<Cluster>
+<Name>Cluster</Name>
+<NumElts>7</NumElts>
+<DAQChannel>
+<Name>physical channel</Name>
+<Val></Val>
+</DAQChannel>
+<String>
+<Name>channel name</Name>
+<Val></Val>
+</String>
+<DBL>
+<Name>Range</Name>
+<Val></Val>
+</DBL>
+<I32>
+<Name>Terminal</Name>
+<Val></Val>
+</I32>
+<EW>
+<Name>Unit</Name>
+<Choice>[V]</Choice>
+<Choice>[A]</Choice>
+<Choice>[F]</Choice>
+<Choice>[H]</Choice>
+<Choice>[°C]</Choice>
+<Choice>[ml/s]</Choice>
+<Choice>[m/s]</Choice>
+<Choice>[bar]</Choice>
+<Choice>[%]</Choice>
+<Choice>[N]</Choice>
+<Choice>[?]</Choice>
+<Val></Val>
+</EW>
+<Boolean>
+<Name>isTemp</Name>
+<Val></Val>
+</Boolean>
+<String>
+<Name>Description</Name>
+<Val></Val>
+</String>
+</Cluster>
+</Array>
+<Cluster>
+<Name>File Cluster</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>File Postfix</Name>
+<Val></Val>
+</String>
+<Path>
+<Name>Folder</Name>
+<Val>C:\temp\zeRecorder</Val>
+</Path>
+<EL>
+<Name>File Type</Name>
+<Choice>CSV</Choice>
+<Choice>TDMS</Choice>
+<Val>1</Val>
+</EL>
+</Cluster>
+</Cluster>
+</Cluster>
+</LVData>

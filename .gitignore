@@ -1,17 +1,13 @@
-# Libraries
-*.lvlibp
-*.llb
+# Generic
+*.tmp
+*.log
+*.bak
+.DS_Store
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-
-# Metadata
+# LabVIEW
 *.aliases
 *.lvlps
-.cache/
+*.lvbitx
+
+# Build outputs
+*.zip
