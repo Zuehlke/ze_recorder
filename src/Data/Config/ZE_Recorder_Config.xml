@@ -12,11 +12,11 @@
 <NumElts>3</NumElts>
 <String>
 <Name>Project</Name>
-<Val></Val>
+<Val>myProject</Val>
 </String>
 <String>
 <Name>Operator ID</Name>
-<Val></Val>
+<Val>user</Val>
 </String>
 <String>
 <Name>Description</Name>
@@ -29,7 +29,7 @@
 </DBL>
 <Array>
 <Name>Channel Array</Name>
-<Dimsize>2</Dimsize>
+<Dimsize>0</Dimsize>
 <Cluster>
 <Name>Cluster</Name>
 <NumElts>7</NumElts>
@@ -43,11 +43,11 @@
 </String>
 <DBL>
 <Name>Range</Name>
-<Val>0.00000000000000</Val>
+<Val></Val>
 </DBL>
 <I32>
 <Name>Terminal</Name>
-<Val>-1</Val>
+<Val></Val>
 </I32>
 <EW>
 <Name>Unit</Name>
@@ -62,54 +62,11 @@
 <Choice>[%]</Choice>
 <Choice>[N]</Choice>
 <Choice>[?]</Choice>
-<Val>0</Val>
+<Val></Val>
 </EW>
 <Boolean>
 <Name>isTemp</Name>
-<Val>0</Val>
-</Boolean>
-<String>
-<Name>Description</Name>
 <Val></Val>
-</String>
-</Cluster>
-<Cluster>
-<Name>Cluster</Name>
-<NumElts>7</NumElts>
-<DAQChannel>
-<Name>physical channel</Name>
-<Val></Val>
-</DAQChannel>
-<String>
-<Name>channel name</Name>
-<Val></Val>
-</String>
-<DBL>
-<Name>Range</Name>
-<Val>0.00000000000000</Val>
-</DBL>
-<I32>
-<Name>Terminal</Name>
-<Val>-1</Val>
-</I32>
-<EW>
-<Name>Unit</Name>
-<Choice>[V]</Choice>
-<Choice>[A]</Choice>
-<Choice>[F]</Choice>
-<Choice>[H]</Choice>
-<Choice>[°C]</Choice>
-<Choice>[ml/s]</Choice>
-<Choice>[m/s]</Choice>
-<Choice>[bar]</Choice>
-<Choice>[%]</Choice>
-<Choice>[N]</Choice>
-<Choice>[?]</Choice>
-<Val>0</Val>
-</EW>
-<Boolean>
-<Name>isTemp</Name>
-<Val>0</Val>
 </Boolean>
 <String>
 <Name>Description</Name>
@@ -126,7 +83,7 @@
 </String>
 <Path>
 <Name>Folder</Name>
-<Val></Val>
+<Val>C:\temp\zeRecorder</Val>
 </Path>
 <EL>
 <Name>File Type</Name>
